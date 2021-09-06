@@ -56,7 +56,7 @@ class AccessDatabase():
         data += ReadSql.read_table(self, sql_command)
         # self.__print_list(data)
         return data
-    
+
     def __print_list(self, data):
         for line in data:
             print(line)
