@@ -1,5 +1,9 @@
 {
-    "test_code_name": "main.py",
-    "test_code_path": "Main",
-    "assert_value": "david.loerinci@gmail.com"    
+    
+    "database": "Customers.db",
+    "database_path": "Database",
+    "table_name": "Customers",
+    "root": ".",
+    "german_speaking_countries": ["Austria", "Germany", "Switzerland"],
+    "french_speaking_countries": ["Belgium", "France", "Switzerland"]
 }
