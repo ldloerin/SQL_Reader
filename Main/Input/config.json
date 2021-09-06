@@ -1,6 +1,5 @@
 {
-    "first_name": "david",
-    "last_name": "Loerinci",
-    "separator": ".",
-    "domain": "gmail.com"
+    "database": "Customers.db",
+    "database_path": "Database",
+    "table_name": "Customers"
 }
