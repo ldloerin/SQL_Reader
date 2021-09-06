@@ -1,5 +1,6 @@
 import os
 import sqlite3
+import sys
 
 
 class ReadSql():
@@ -11,16 +12,16 @@ class ReadSql():
         self.database_file = os.path.join(self.root, database_path, database)
 
     def execute_workflow(self):
-        self.__connect_database()
+        self.connect_database()
         self.query_table()
-        #self.__close_connection()
+        # self.__close_connection()
 
-    def __connect_database(self):
+    def connect_database(self):
         if os.path.exists(self.database_file):
             self.conn = sqlite3.connect(self.database_file)
             self.c = self.conn.cursor()
         else:
-            raise Error("\n\nError: Defined file does not exist.\n" + self.database_file + "\n\n")
+            sys.exit("\n\nError: Defined file does not exist.\n" + self.database_file + "\n\n")
 
     def query_table(self):
         sql_command = "SELECT * FROM " + self.table_name

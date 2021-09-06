@@ -9,13 +9,13 @@ from Services.SQL_Interface.read_sql import ReadSql
 class ReadSqlDatabase(GetInput):
     def execute_workflow(self):
         self.__main()
-        #self.__create_dockerfile()
+        # self.__create_dockerfile()
 
     def __main(self):
         self.root = os.path.split(os.path.dirname(__file__))[0]
         sql = ReadSql(self)
         sql.execute_workflow()
-        #self.sql_command_list = sql.sql_command_list
+        # self.sql_command_list = sql.sql_command_list
 
     def __create_dockerfile(self):
         self.root_path = os.path.dirname(self.code_path)

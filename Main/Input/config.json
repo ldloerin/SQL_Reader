@@ -1,5 +1,5 @@
 {
     "database": "Customers.db",
-    "database_path": "Database",
+    "database_path": "Data_base",
     "table_name": "Customers"
 }
